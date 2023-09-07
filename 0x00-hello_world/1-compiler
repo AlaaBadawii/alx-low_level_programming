@@ -1,4 +1,2 @@
 #!/bin/bash
-$CFILE = $1
-OUT_FILE = ${CFILE%.c}.o
-gcc -c $CFILE -o OUT_FILE
+gcc -c "$CFILE" -o "{$CFILE%.c}.o"
