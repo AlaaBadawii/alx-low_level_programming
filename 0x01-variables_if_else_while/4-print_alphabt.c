@@ -11,7 +11,7 @@ int main(void)
 	while (a != 'z' + 1)
 	{
 		if (a == 'e' || a == 'q')
-			a = a+1;
+			a = a + 1;
 		putchar (a);
 		a++;
 	}
