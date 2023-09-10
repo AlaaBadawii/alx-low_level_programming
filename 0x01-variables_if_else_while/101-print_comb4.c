@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints all possible different combinations of three digits.
- * 
+ *
  * Return: Always 0
  */
 int main(void)
@@ -10,8 +10,7 @@ int main(void)
 
 	i = 48;
 	j = 48;
-	k = 48;
-   
+	k = 48; 
 
 	while (i != 58)
 	{
@@ -44,7 +43,7 @@ int main(void)
 		i++;
 	}
 
-	putchar('\n');
+	putchar ('\n');
 
 	return (0);
 }
