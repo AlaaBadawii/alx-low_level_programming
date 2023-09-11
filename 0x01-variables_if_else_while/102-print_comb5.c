@@ -17,17 +17,17 @@ int main(void)
 
 		while (j <= 99)
 		{
-			putchar (i / 10);
-			putchar (i % 10);
+			putchar (i / 10 + '0');
+			putchar (i % 10 + '0');
 			putchar (' ');
-			putchar (j / 10);
-			putchar (j % 10);
+			putchar (j / 10 + '0');
+			putchar (j % 10 + '0');
+			putchar (',');
+			putchar (' ');
 			j++;
 		}
 
 		i++;
-		putchar (',');
-		putchar (' ');
 	}
 
 	putchar ('\n');
