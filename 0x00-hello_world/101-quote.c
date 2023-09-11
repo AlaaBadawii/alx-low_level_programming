@@ -13,8 +13,8 @@ int main(void)
 	char str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 	int len = strlen(str);
 
-	write (1, str, len);
-	write (2, "\n", 1);
-	
+	write(1, str, len);
+	write(2, "\n", 1);
+
 	return (0);
 }
