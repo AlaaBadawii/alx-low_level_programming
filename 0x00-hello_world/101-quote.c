@@ -6,7 +6,7 @@
  * and that piece of art is useful" - Dora Korpar, 2015-10-19,
  * followed by a new line,
  *
- * Return: always 0
+ * Return: always 1
  */
 int main(void)
 {
@@ -16,5 +16,5 @@ int main(void)
 	write(1, str, len);
 	write(2, "\n", 1);
 
-	return (0);
+	return (1);
 }
