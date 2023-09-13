@@ -15,7 +15,7 @@ void times_table(void)
 		{
 			printf("%d", i * j);
 
-			if (((i * j) % 10) != (i * j))
+			if (i * j < 10 )
 			{
 
 				if (j != 9)
