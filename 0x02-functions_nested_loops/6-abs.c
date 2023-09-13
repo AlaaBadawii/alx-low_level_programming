@@ -2,10 +2,10 @@
 #include <stdio.h>
 /**
  * _abs - computes the absolute value of an integer.
- * @int: int input
+ * @n: int input
  * Return: absolute value.
  */
-int _abs(int)
+int _abs(int n)
 {
 	if (n >= 0)
 	{
@@ -14,6 +14,6 @@ int _abs(int)
 	elae
 	{
 		n = n * -1;
-		_putchar (n);
+		_putchar(n);
 	}
 }
