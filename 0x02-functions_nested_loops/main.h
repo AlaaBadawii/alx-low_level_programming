@@ -13,4 +13,4 @@ void times_table(void);
 int add(int, int);
 void print_to_98(int n);
 
-#endif //MY_HEADER_H
+#endif
