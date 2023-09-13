@@ -13,21 +13,27 @@ void times_table(void)
 
 		while (j != 10)
 		{
-			printf("%d", i * j);
-
-			if (i * j < 10 && j != 9)
+			if (j == 0)
 			{
-				printf(",  ");
-			}
+				printf("%d", i * j);
 			else
 			{
-
-				if (j != 9)
+				if (i * j < 10 && j != 9)
 				{
-					printf(",");
-					printf(" ");
+					printf(",  ");
+					printf("%d", i * j);
 				}
+				else
+				{
 
+					if (j != 9)
+					{
+						printf(",");
+						printf(" ");
+						printf("%d", i * j);
+					}
+
+				}
 			}
 
 			j++;
