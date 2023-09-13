@@ -13,7 +13,7 @@ void jack_bauer(void)
 	{
 		j = 0;
 
-		while (j <= 60)
+		while (j < 60)
 		{
 			printf("%d", i / 10);
 			printf("%d", i % 10);
