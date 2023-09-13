@@ -7,16 +7,9 @@
  */
 int print_last_digit(int n)
 {
-	int last_digit;
-	int result;
+	int last_digit, result;
 
-	last_digit = n;
-
-	while (last_digit >= 10)
-	{
-		last_digit = last_digit % 10;
-	}
-
+	last_digit = n % 10;
 	result = last_digit * 11;
 
 	return (result);
