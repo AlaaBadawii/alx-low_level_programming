@@ -14,6 +14,4 @@ int add(int, int);
 void print_to_98(int n);
 int _putchar(char c);
 
-#include "_putchar.c"
-
 #endif
