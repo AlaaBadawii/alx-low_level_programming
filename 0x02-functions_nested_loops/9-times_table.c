@@ -26,14 +26,12 @@ void times_table(void)
 				}
 				else
 				{
-
-					if (j != 9)
+					if (j != 10)
 					{
 						printf(",");
 						printf(" ");
 						printf("%d", i * j);
 					}
-
 				}
 			}
 
