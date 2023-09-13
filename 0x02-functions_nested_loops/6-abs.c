@@ -11,7 +11,7 @@ int _abs(int n)
 	{
 		_putchar(n);
 	}
-	elae
+	else
 	{
 		n = n * -1;
 		_putchar(n);
