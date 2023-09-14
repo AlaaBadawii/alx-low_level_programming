@@ -5,20 +5,19 @@
  */
 void print_triangle(int size)
 {
-	int i, space, k;
+	int i, space;
 
-	for (i = 1; i <= size; ++i, k = 0)
+	for (i = 1; i <= size; i++)
 	{
 
-		for (space = 1; space <= size - i; ++space)
+		for (space = size; space > size - i; space--)
 		{
 			_putchar(' ');
 		}
 
-		while (k < i - 1)
+		for (space = 1; space <= i; space++)
 		{
-			putchar('#');
-			++k;
+			_putchar('*');
 		}
 
 		putchar('\n');
