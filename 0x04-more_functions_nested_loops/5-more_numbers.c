@@ -11,11 +11,10 @@ void more_numbers(void)
 
 		for (j = 0; j < 15; j++)
 		{
-			putchar(j + '0');
+			printf("%d", j);
 		}
 
 		_putchar('\n');
 	}
 
-	_putchar('\n');
 }
