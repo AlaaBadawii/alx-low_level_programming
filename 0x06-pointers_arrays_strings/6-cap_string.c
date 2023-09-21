@@ -11,13 +11,16 @@ char *cap_string(char *str)
 	int i = 0;
 	char separators[] = " ,\n\t;.!?\"(){}";
 
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
 		if (i == 0 && islower(str[i]))
 		{
 			str[i] -= 32;
 			break;
 		}
+
+		if (str[i] == '\t')
+			str[i] = ' ';
 
 		if (strchr(separators, str[i - 1]) && islower(str[i]))
 		{
