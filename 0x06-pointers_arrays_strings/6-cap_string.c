@@ -15,13 +15,13 @@ char *cap_string(char *str)
 	{
 		if (i == 0 && islower(str[i]))
 		{
-			str[i] -= 32;
+			str[i] = str[i] - 32;
 			break;
 		}
 
 		if (strchr(separators, str[i - 1]) && islower(str[i]))
 		{
-			str[i] -= 32;
+			str[i] = str[i] - 32;
 		}
 
 		i++;
