@@ -13,7 +13,7 @@ char *cap_string(char *str)
 
 	while (str[i] != '\0')
 	{
-		if (i == 0 && islower(str[i]))
+		if (islower(str[i]))
 		{
 			str[i] -= 32;
 			break;
