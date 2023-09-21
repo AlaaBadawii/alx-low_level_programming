@@ -10,13 +10,29 @@ char *cap_string(char *str)
 
 	while(str[i] != '\0')
 	{
-		if (str[0] > 90)
+		if (str[0] > 90 )
 			str[0] -= 32;
-		/*if(str[i] == '\t')
-			*(str + i) = ' ';*/
 
-		if (str[i] > 90 && ((str[i - 1] == ' ' || str[i - 1] == '\n') ||  str[i - 1] == '\t'))
-			str[i] -= 32;
+		switch (str[i -1])
+		{
+			case ',':
+			case ' ':
+			case '\n':
+			case '\t':
+			case ';':
+			case '.':
+			case '!':
+			case '?':
+			case '"':
+			case '(':
+			case ')':
+			case '{':
+			case '}':
+				str[i] -= 32;
+				break;
+			default:
+				break;
+		}
 
 		i++;
 	}
