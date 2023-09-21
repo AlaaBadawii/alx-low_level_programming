@@ -19,9 +19,6 @@ char *cap_string(char *str)
 			break;
 		}
 
-		if (str[i] == '\t')
-			str[i] = ' ';
-
 		if (strchr(separators, str[i - 1]) && islower(str[i]))
 		{
 			str[i] -= 32;
