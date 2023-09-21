@@ -17,6 +17,7 @@ int _strcmp(char *s1, char *s2)
 			deff = *(s1 + i) - *(s2 + i);
 			return (deff);
 		}
+		i++
 	}
 
 	deff = 0;
