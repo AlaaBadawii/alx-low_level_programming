@@ -9,17 +9,17 @@ char *leet(char *str)
 	int i, j, e;
 	char *change = "43071";
 	char *values = "aAeEoOtTlL";
-	
+
 	i = 0;
 
 	while (str[i] != '\0')
 	{
 		j = 0;
 		e = 0;
-		while(j < 10)
+		while (j < 10)
 		{
 
-			if(str[i] == values[j] || str[i] == values[j + 1])
+			if (str[i] == values[j] || str[i] == values[j + 1])
 			{
 				str[i] = change[e];
 			}
@@ -33,5 +33,3 @@ char *leet(char *str)
 
 	return (str);
 }
-	
-
