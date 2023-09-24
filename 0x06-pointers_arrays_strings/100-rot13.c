@@ -17,7 +17,7 @@ char *rot13(char *str)
 	{
 
 		j = 0;
-		while (data_13[j])
+		while (data_13[j] != '\0')
 		{
 
 			if (str[i] == data_13[j])
