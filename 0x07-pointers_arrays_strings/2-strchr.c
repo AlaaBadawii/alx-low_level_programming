@@ -10,6 +10,9 @@ char *_strchr(char *s, char c)
 	int i = 0;
 	char **pptr = &s;
 
+	if (c == NULL)
+		return (NULL);
+
 	while (s[i] != c)
 	{
 		i++;
