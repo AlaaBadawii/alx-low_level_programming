@@ -20,9 +20,6 @@ char *_strpbrk(char *s, char *accept)
 			if (s[i] == accept[j])
 			{
 				pptr = &s[i];
-				
-				return (pptr);
-
 				break;
 			}
 			j++;
