@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c -o liball.o *.c && ar rc liball.a liball.o
+gcc -c -o liball.o *.c && ar rc liball.a liball.o && ranlib liball.a
