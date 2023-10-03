@@ -11,10 +11,11 @@
 int main(__attribute__((unused)) int argc, char **argv)
 {
 	int coin, num, two, quarter, dime, penny, nickel;
+
 	if (argc < 2)
 	{
 		printf("Error\n");
-		
+
 		return (1);
 	}
 
@@ -25,7 +26,7 @@ int main(__attribute__((unused)) int argc, char **argv)
 	{
 		num++;
 	}
-		
+
 	for (dime = 10; coin >= dime; coin -= 10)
 	{
 		num++;
