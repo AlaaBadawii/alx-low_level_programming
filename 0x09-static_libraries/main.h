@@ -1,6 +1,8 @@
 #ifndef MY_HEADER_H
 #define MY_HEADER_H
 
+#include <stdio.h>
+
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
