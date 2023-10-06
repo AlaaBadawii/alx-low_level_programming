@@ -8,18 +8,18 @@
 char **strtow(char *str)
 {
 	int i, j, num_words, word_len, index;
-	char **words, *token;
+	char **words;
+	char *token;
 
 	if (str == NULL || str[0] == '\0')
 		return (NULL);
 	num_words = 0;
 	word_len = 0;
-	i = 0;
-	while (str[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (str[i] != ' ')
 			word_len++;
-		if ((str[i + 1] == ' ' || str[i + 1] == '\0') && word_len > 0)
+		if ((str[i] == ' ' || str[i + 1] == '\0') && word_len > 0)
 		{
 			num_words++;
 			word_len = 0;
@@ -27,7 +27,7 @@ char **strtow(char *str)
 	}
 	words = malloc(sizeof(char *) * (num_words + 1));
 	if (words == NULL)
-		free(words);
+		return(NULL);
 	index = 0;
 	token = strtok(str, " ");
 	while (token != NULL)
