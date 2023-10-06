@@ -13,7 +13,7 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	
+
 	len = 0;
 
 	for (i = 0; i < ac; i++)
@@ -30,16 +30,16 @@ char *argstostr(int ac, char **av)
 		free(ptr);
 		return (NULL);
 	}
-	
+
 	for (j = 0; j < ac; j++)
 	{
 		if (j == 0)
 			strcpy(ptr, av[j]);
-		else 
+		else
 			strcat(ptr, av[j]);
 
 		strcat(ptr, "\n");
 	}
-	
+
 	return (ptr);
 }
