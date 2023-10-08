@@ -30,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	if (n > s2_size)
-		n =s2_size
+		n =s2_size;
 
 	size = s1_size + n + 1;
 	strout = malloc(sizeof(char) * size);
@@ -43,10 +43,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	l = 0;
 
-	for (k = i; k < size + n; k++, l++)
+	for (k = i; k < size + 1; k++, l++)
 		strout[k] = s2[l];
 
-	strout[k] = '\0';
+	strout[size - 1] = '\0';
 
 	return (strout);
 }
