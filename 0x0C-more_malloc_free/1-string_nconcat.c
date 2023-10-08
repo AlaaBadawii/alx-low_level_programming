@@ -23,7 +23,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 		s2_size = n;
 
-	size = strlen(s1) + s2_size + 1;
+	size = s1_size + s2_size + 1;
 	strout = malloc(sizeof(char) * size);
 
 	if (strout == NULL)
