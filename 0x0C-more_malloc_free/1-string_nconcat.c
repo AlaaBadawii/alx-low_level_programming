@@ -11,15 +11,26 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *strout;
 	unsigned int size, s1_size, s2_size, i, k, l;
 
+	s1_size = 0;
+	s2_size = 0;
+
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 
-	s1_size = strlen(s1);
+	while (s1[s1_size] != '\0')
+	{
+		s1_size++;
+	}
 
-	if (n >= strlen(s2))
-		s2_size = strlen(s2);
+	while (s2[s2_size] != '\0')
+	{
+		s2_size++;
+	}
+
+	if (n >= s2_size)
+		s2_size += 0;
 	else
 		s2_size = n;
 
