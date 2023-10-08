@@ -43,7 +43,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	l = 0;
 
-	for (k = i; k < size + 1; k++, l++)
+	for (k = i; k < size - 1; k++, l++)
 		strout[k] = s2[l];
 
 	strout[size - 1] = '\0';
