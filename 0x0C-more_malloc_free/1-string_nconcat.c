@@ -48,7 +48,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (k = i; k < size; k++, l++)
 		strout[k] = s2[l];
 
-	strout[k] = '\0';
+	strout[size] = '\0';
 
 	return (strout);
 }
