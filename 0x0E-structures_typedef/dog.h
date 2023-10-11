@@ -1,5 +1,7 @@
 #ifndef controller
 #define controller
+#include <stdio.h>
+#include <stdlib.h>
 
 typedef struct dog dog_t;
 
