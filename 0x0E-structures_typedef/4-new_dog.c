@@ -31,9 +31,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	_strcpy(cp_owner, owner);
 
-	new_ptr -> name = cp_name;
-	new_ptr -> age = age;
-	new_ptr -> owner = cp_owner;
+	new_ptr->name = cp_name;
+	new_ptr->age = age;
+	new_ptr->owner = cp_owner;
 
 	return (new_ptr);
 }
@@ -52,13 +52,13 @@ int _strlen(char *ptr)
 		len++;
 		ptr++;
 	}
-	
+
 	return (len);
 }
 
 /**
  * _strcpy - copy string
- * @dest: char pointer input 
+ * @dest: char pointer input
  * @source: char pointer input
  */
 void _strcpy(char *dest, char *source)
