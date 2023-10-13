@@ -6,7 +6,8 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	unsigned int i, j;
+	unsigned int i;
+	char *str;
 
 	va_list ptr;
 
@@ -14,13 +15,15 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%s", va_arg(ptr, char *));
-		j = 0;
-		while (separator[j] != '\0' && i + 1 != n)
-		{
-			printf("%c", separator[i]);
-			j++;
-		}
+		str = va_arg(ptr, char *);
+
+		if (str != NULL)
+			printf("%s", str);
+		else
+			printf("(nil)");
+
+		if (i + 1 != n)
+			printf("%s", separator);
 	}
 
 	va_end(ptr);
