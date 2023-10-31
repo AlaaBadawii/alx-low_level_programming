@@ -28,8 +28,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (sz_write != sz_read)
 		return (0);
 
-	free (c);
-	close (fd);
+	free(c);
+	close(fd);
 
 	return (sz_write);
 }
