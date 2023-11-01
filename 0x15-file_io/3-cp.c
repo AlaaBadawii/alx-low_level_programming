@@ -40,10 +40,10 @@ int main(int argc, char **argv)
 	if (fdr < 0)
 		error("Error: Can't read from file", argv[1], 98);
 	if (close(file_from) == -1)
-		error("Error: Can't close fd", NULL, 100);
+		error("Error: Can't close fd", file_from, 100);
 	if (close(file_to) == -1)
 	{
-		 error("Error: Can't close fd", NULL, 100);
+		 error("Error: Can't close fd", file_to, 100);
 	}
 
 	return (0);
