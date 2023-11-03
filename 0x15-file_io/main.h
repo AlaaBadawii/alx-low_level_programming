@@ -1,6 +1,8 @@
 #ifndef MY_HEADER_H
 #define MY_HEADER_H
 
+#define BUFSZ 1024
+
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
