@@ -38,12 +38,22 @@ int main(int ac, char **av)
 		if (fdr == -1)
 		{
 			dprintf(2, "Error: Can't read from file %s\n", av[1]);
+			if (close(file_from) == -1)
+			{
+				dprintf(2, "Can't close fd %d\n", file_from);
+				exit(100);
+			}
 			exit(98);
 		}
 		fdw = write(file_to, buf, fdr);
 		if (fdw == -1)
 		{
 			dprintf(2, "Error: Can't write to %s\n", av[2]);
+			if (close(file_to) == -1)
+			{
+				dprintf(2, "Can't close fd %d\n", file_to);
+				exit(100);
+			}
 			exit(99);
 		}
 	}
