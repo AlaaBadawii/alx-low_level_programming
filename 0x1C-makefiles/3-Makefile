@@ -9,7 +9,7 @@ all: ${OBJ}
 clean:
 	$(RM) *
 Oclean:
-	$(RM) *.o
+	$(RM) $(OBJ)
 fclean: clean oclean
 re: oclean all
 
